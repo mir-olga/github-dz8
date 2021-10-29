@@ -3,4 +3,8 @@
     @include font(36px, bold, 42px, 0.03em);
     text-align: center;
     color: var(--primary-title-color);
+
+    @media screen and (min-width: 480px) {
+      @include font(28px, bold, 33px, 0.03em);
+  }
   }
