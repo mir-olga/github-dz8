@@ -1,0 +1,123 @@
+.modal-field {
+  margin-bottom: 10px;
+}
+.input-label {
+  display: block;
+  margin-bottom: 4px;
+
+  @include font(12px, normal, 14px, 0.01em);
+  color: var(--secondary-title-color);
+}
+.input-wrapper {
+  display: block;
+  position: relative;
+}
+.modal-input {
+  width: 100%;
+  padding-left: 42px;
+  padding-right: 20px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-modal-color);
+  background: transparent; /*прозрачный*/
+  outline: none;
+
+  transition-property: border-color;
+  @extend %transition-description;
+
+  &:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+
+    & + .input-icon {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--primary-title-color);
+
+  transition-property: fill;
+  @extend %transition-description;
+}
+.modal-text-input {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  resize: none; /*размеры поля не изменяются*/
+  border: 1px solid var(--primary-modal-color);
+  background: transparent;
+  padding: 12px 16px;
+  outline: none;
+
+  color: var(--primary-modal-color);
+  @include font(12px, normal, 14px, 0.01em);
+
+  transition-property: border-color;
+  @extend %transition-description;
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.link-underline {
+  color: var(--accent-color);
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.check-text {
+  display: flex;
+  margin-bottom: 15px;
+  position: relative;
+  align-items: center;
+  padding: 9px;
+
+  @include font(14px, normal, 24px, 0.03em);
+  color: var(--secondary-title-color);
+
+  transition-property: color;
+  @extend %transition-description;
+}
+.check-span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-title-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  @extend %align-items;
+  justify-content: center;
+
+  transition-property: border;
+  @extend %transition-description;
+
+  &:hover {
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+  }
+}
+.modal-checkbox {
+  &:checked + .check-text span {
+    background-color: var(--accent-color);
+    border: none;
+  }
+}
+.check-icon {
+  fill: #fff;
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 50px;
+}

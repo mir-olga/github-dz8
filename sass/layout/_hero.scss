@@ -1,0 +1,34 @@
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: auto;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container {
+  padding: 200px 0;
+}
+.hero__title {
+  width: 696px;
+  margin: 0 auto 30px;
+
+  @include font(44px, 900, 60px, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__button {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 10px 32px;
+}
