@@ -6,7 +6,44 @@
 
 .footer-flex {
   display: flex;
-  align-items: baseline;
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+  @media screen and (max-width:1199px) {
+    flex-direction: column;
+  }
+}
+
+.footer-data {
+  @media screen and (max-width:1199px) {
+    text-align: center;
+  }
+}
+
+.footer-flex-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width:768px) {
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  @media screen and (min-width:1199px) {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width:768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -33,34 +70,58 @@
 }
 
 .footer-join {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px){
+    margin-left: 70px;
+  }
 }
 
 .footer__title {
   @include font(14px, bold, 16px, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (max-width: 1199px){
+    text-align: center;
+  }
 }
 
 .footer-sign {
-  margin-left: auto;
-  margin-right: 0;
+  @media screen and (min-width: 1200px){
+    margin-left: auto;
+    margin-right: 0;
+  }
+  @media screen and (max-width: 1199px) {
+    margin: auto;
+    margin-top: 60px;
+  }
 }
+
 .footer-form-container {
   margin-top: 20px;
 }
+
 .footer-form {
-  display: flex;
-  justify-content: flex-end;
-  height: 50px;
+  @media screen and (min-width: 1200px){
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+  }
 }
+
 .footer-form__input {
-  display: flex;
+ 
+  @media screen and (max-width:1199px){
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px){
+    display: flex;
+  }
 
   & input {
     padding: 15px 15px;
     height: 50px;
-    width: 360px;
+    width:100%;
     border-radius: 4px;
     border: 1px solid var(--secondary-title-color);
     background: transparent; /*прозрачный*/
@@ -68,6 +129,14 @@
 
     color: var(--secondary-title-color);
     @include font(16px, normal, 20px, 0.03em);
+
+    @media screen and (min-width: 1200px){
+      width: 360px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+      width: 450px;
+    }
   }
 }
 
@@ -75,8 +144,13 @@
   display: flex;
   padding: 10px 28px;
   align-items: center;
-  margin-left: 12px;
+  margin:0px auto;
+
+  @media screen and (min-width: 1200px){
+    margin-left: 12px;
+  }
 }
+
 .footer-form__icon {
   width: 24px;
   height: 24px;

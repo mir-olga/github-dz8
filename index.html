@@ -16,10 +16,11 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header header-bottom"><!--
+    <header class="header header-bottom">
       <div class="header-container container">
         <nav class="header-navigation">
           <a href="index.html" class="logo link"
@@ -64,11 +65,60 @@
             >
           </li>
         </ul>
-      </div>-->
+      </div>
+    
+      <!--Кнопка для мобильного меню--
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>-->
+
+           <!--Мобильное меню меню--
+           <div class="container">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+    
+            <ul class="menu">
+              <li><a href="" class="link">О нас</a></li>
+              <li><a href="" class="link">Работы</a></li>
+              <li><a href="" class="link">Контакты</a></li>
+              <li><a href="" class="link">Карьера</a></li>
+            </ul>
+          </div>-->
+
     </header>
 
     <main>
-      <!-- Герой --><!--
+      <!-- Герой -->
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -76,10 +126,10 @@
             Заказать услугу
           </button>
         </div>
-      </section>-->
+      </section>
 
       <!-- Преимущества -->
-    <!--  <section class="benefits">
+      <section class="benefits">
         <div class="benefits__container container">
           <h2 hidden>Преимущества</h2>
 
@@ -134,9 +184,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
 
-      <!-- Чем мы занимаемся --><!--
+      <!-- Чем мы занимаемся -->
       <section class="about section">
         <div class="about-container container">
           <h2 class="about__title section-title">Чем мы занимаемся</h2>
@@ -175,7 +225,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
 
       <!-- Наша команда -->
       <section class="team section">
@@ -184,11 +234,9 @@
 
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
+              <img class="team-list__img"
                 src="./images/team_4.jpg"
-                alt="Игорь Демьяненко"
-                width="450"
-              />
+                alt="Игорь Демьяненко"/>
               <div class="team-description">
                 <h3 class="team-description__name">Игорь Демьяненко</h3>
                 <p class="team-description__position">Product Designer</p>
@@ -232,7 +280,9 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team_3.jpg" alt="Ольга Репинa" width="450" />
+              <img class="team-list__img"
+              src="./images/team_3.jpg" 
+              alt="Ольга Репинa"/>
               <div class="team-description">
                 <h3 class="team-description__name">Ольга Репина</h3>
                 <p class="team-description__position">Frontend Developer</p>
@@ -277,6 +327,7 @@
             </li>
             <li class="team-list__item">
               <img
+              class="team-list__img"
                 src="./images/team_2.jpg"
                 alt="Николай Тарасов"
                 width="450"
@@ -324,7 +375,7 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/team_1.jpg" alt="Михаил Ермаков" width="450" />
+              <img class="team-list__img" src="./images/team_1.jpg" alt="Михаил Ермаков"/>
               <div class="team-description">
                 <h3 class="team-description__name">Михаил Ермаков</h3>
                 <p class="team-description__position">UI Designer</p>
@@ -371,7 +422,7 @@
         </div>
       </section>
 
-      <!-- Постоянные клиенты --> <!--
+      <!-- Постоянные клиенты --> 
       <section class="clients section">
         <div class="clients-container container">
           <h2 class="clients__title section-title">Постоянные клиенты</h2>
@@ -421,12 +472,39 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
     </main>
 
-    <!-- Футер --> <!--
+    <!--Мобильное меню-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">О нас</a></li>
+        <li><a href="" class="link">Работы</a></li>
+        <li><a href="" class="link">Контакты</a></li>
+        <li><a href="" class="link">Карьера</a></li>
+      </ul>
+    </div>
+
+    <!-- Футер --> 
     <footer class="footer">
       <div class="footer-flex container">
+        <div class="footer-flex-row">
         <div class="footer-data">
           <a href="index.html" class="logo link"
             >Web<span class="logo_white">Studio</span>
@@ -491,6 +569,7 @@
             </li>
           </ul>
         </div>
+      </div>
 
         <div class="footer-sign">
           <p class="footer__title">Подпишитесь на рассылку</p>
@@ -516,7 +595,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer> 
     <!-- Модалка --> <!--
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -599,5 +678,11 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

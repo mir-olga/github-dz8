@@ -1,14 +1,28 @@
 .client-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 480px) {
+    margin:-15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.client-list__item + .client-list__item {
-  margin-left: 30px;
+.client-list__item {
+  margin: 15px;
 }
+
+/*@media screen and (min-width: 1200px) {
+  .client-list__item + .client-list__item {
+  margin-left: 30px;
+  }
+}*/
 .client-list__link {
   color: var(--primary-icon-color);
-  width: 168px;
+  width: 210px;
   height: 92px;
   @extend %align-items;
   justify-content: center;
@@ -21,6 +35,14 @@
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 168px;
   }
 }
 
