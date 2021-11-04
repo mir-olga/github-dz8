@@ -42,26 +42,39 @@
 }
 
 .header-contacts__right {
-  @extend %align-items;
+  display: flex;
   margin-left: auto;
+
+  @media screen and (min-width: 780px) and (max-width: 1199px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
 }
 
 .header-contacts__data {
-  display: block;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   transition-property: color;
   @extend %transition-description;
 
-  @include font(14px, 500, 16px, 0.02em);
+  @include font(12px, 500, 14px, 0.02em);
   color: var(--secondary-title-color);
-  margin-left: 10px;
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 500, 16px, 0.02em);
+
+    display: block;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-left: 10px;
   }
 }
 

@@ -1,7 +1,12 @@
 .portfolio-list-button {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 .portfolio-button {
   display: flex;
@@ -38,4 +43,9 @@
 
 .portfolio-list-button-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
 }

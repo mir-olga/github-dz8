@@ -4,7 +4,7 @@
   @media screen and (max-width: 1199px) {
     display: none;
     height: 1px;
-   }
+  }
 }
 
 .about-list {
@@ -20,9 +20,13 @@
     margin-right: 30px;
   }
 }
-.about-list__item img {
-  width: 1px;
+
+@media screen and (max-width: 1199px) {
+  .about-list__item img {
+    width: 1px;
+  }
 }
+
 .about-top {
   background: rgba(47, 48, 58, 0.8);
   width: 100%;

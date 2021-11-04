@@ -1,23 +1,22 @@
 .logo {
-     display: block;
-    padding-top: 24px;
-    padding-bottom: 20px;
-    font-family: "Raleway", sans-serif;
-    @include font(24px, bold, 28px, 0.03em);
-    font-style: normal;
-    color: var(--accent-color);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  @include font(24px, bold, 28px, 0.03em);
+  font-style: normal;
+  color: var(--accent-color);
 
-    @media screen and (min-width: 1200px){
-      @include font(26px, 700, 31px, 0.03em);
-      padding-bottom: 25px;
-    }
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 700, 31px, 0.03em);
+    padding-bottom: 25px;
+  }
+}
 
-  }
-  
-  .logo_black {
-    color: #000;
-  }
-  
-  .logo_white {
-    color: #ffffff;
-  }
+.logo_black {
+  color: #000;
+}
+
+.logo_white {
+  color: #ffffff;
+}

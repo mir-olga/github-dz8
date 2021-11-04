@@ -15,11 +15,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-
+    <!--link rel="stylesheet" href="./css/styles.css" />-->
   </head>
   <body>
-    <!-- Шапка сайта -->
+    <!-- Шапка сайта --><!--
     <header class="header header-bottom">
       <div class="header-container container">
         <nav class="header-navigation">
@@ -65,8 +64,8 @@
             >
           </li>
         </ul>
-      </div>
-    
+      </div>-->
+
       <!--Кнопка для мобильного меню--
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
@@ -85,7 +84,7 @@
           </svg>
         </button>-->
 
-           <!--Мобильное меню меню--
+      <!--Мобильное меню меню--
            <div class="container">
             <button
               class="menu-toggle js-open-menu"
@@ -114,7 +113,6 @@
               <li><a href="" class="link">Карьера</a></li>
             </ul>
           </div>-->
-
     </header>
 
     <main>
@@ -184,7 +182,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!-- Чем мы занимаемся -->
       <section class="about section">
@@ -225,7 +223,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!-- Наша команда -->
       <section class="team section">
@@ -234,9 +232,32 @@
 
           <ul class="team-list list">
             <li class="team-list__item">
-              <img class="team-list__img"
-                src="./images/team_4.jpg"
-                alt="Игорь Демьяненко"/>
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team_1.jpg 1x, ./images/team_1-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team_1-tab.jpg    1x,
+                    ./images/team_1-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team_1_mob.jpg    1x,
+                    ./images/team_1_mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/team_1.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="team-description">
                 <h3 class="team-description__name">Игорь Демьяненко</h3>
                 <p class="team-description__position">Product Designer</p>
@@ -280,9 +301,32 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img class="team-list__img"
-              src="./images/team_3.jpg" 
-              alt="Ольга Репинa"/>
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team_2.jpg 1x, ./images/team_2-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team_2-tab.jpg    1x,
+                    ./images/team_2-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team_2_mob.jpg    1x,
+                    ./images/team_2_mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/team_2.jpg"
+                  alt="Ольга Репинa"
+                />
+              </picture>
+              
               <div class="team-description">
                 <h3 class="team-description__name">Ольга Репина</h3>
                 <p class="team-description__position">Frontend Developer</p>
@@ -326,12 +370,32 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-              class="team-list__img"
-                src="./images/team_2.jpg"
-                alt="Николай Тарасов"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team_3.jpg 1x, ./images/team_3-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team_3-tab.jpg    1x,
+                    ./images/team_3-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team_3_mob.jpg    1x,
+                    ./images/team_3_mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/team_3.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
+              
               <div class="team-description">
                 <h3 class="team-description__name">Николай Тарасов</h3>
                 <p class="team-description__position">Marketing</p>
@@ -375,7 +439,32 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img class="team-list__img" src="./images/team_1.jpg" alt="Михаил Ермаков"/>
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team_4.jpg 1x, ./images/team_4-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team_4-tab.jpg    1x,
+                    ./images/team_4-tab-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team_4_mob.jpg    1x,
+                    ./images/team_4_mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/team_4.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
+              
               <div class="team-description">
                 <h3 class="team-description__name">Михаил Ермаков</h3>
                 <p class="team-description__position">UI Designer</p>
@@ -422,7 +511,7 @@
         </div>
       </section>
 
-      <!-- Постоянные клиенты --> 
+      <!-- Постоянные клиенты -->
       <section class="clients section">
         <div class="clients-container container">
           <h2 class="clients__title section-title">Постоянные клиенты</h2>
@@ -475,7 +564,11 @@
       </section>
     </main>
 
-    <!--Мобильное меню-->
+    <!--Мобильное меню-->   <!--
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+    </div>
+     
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
@@ -499,77 +592,89 @@
         <li><a href="" class="link">Контакты</a></li>
         <li><a href="" class="link">Карьера</a></li>
       </ul>
-    </div>
+    </div>-->
 
-    <!-- Футер --> 
+    <!-- Футер -->
     <footer class="footer">
       <div class="footer-flex container">
         <div class="footer-flex-row">
-        <div class="footer-data">
-          <a href="index.html" class="logo link"
-            >Web<span class="logo_white">Studio</span>
-          </a>
+          <div class="footer-data">
+            <a href="index.html" class="logo link"
+              >Web<span class="logo_white">Studio</span>
+            </a>
 
-          <ul class="footer-contacts list">
-            <li class="footer-contacts__item">
-              <a
-                href=""
-                class="footer-contacts__address footer-contacts__link link"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="footer-contacts__item">
-              <a
-                href="mailto:info@example.com"
-                class="footer-contacts__data footer-contacts__link link"
-                >info@example.com</a
-              >
-            </li>
-            <li class="footer-contacts__item">
-              <a
-                href="tel:+380991111111"
-                class="footer-contacts__data footer-contacts__link link"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
+            <ul class="footer-contacts list">
+              <li class="footer-contacts__item">
+                <a
+                  href=""
+                  class="footer-contacts__address footer-contacts__link link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-contacts__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-contacts__data footer-contacts__link link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-contacts__item">
+                <a
+                  href="tel:+380991111111"
+                  class="footer-contacts__data footer-contacts__link link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-join">
+            <p class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+
+            <ul class="social-list social-list_margin-top list">
+              <li class="social-list__item">
+                <a
+                  href=""
+                  class="social-list__link_grey social-list__link link"
+                >
+                  <svg class="social-list__icon_white social-list__icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href=""
+                  class="social-list__link_grey social-list__link link"
+                >
+                  <svg class="social-list__icon_white social-list__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href=""
+                  class="social-list__link_grey social-list__link link"
+                >
+                  <svg class="social-list__icon_white social-list__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  href=""
+                  class="social-list__link_grey social-list__link link"
+                >
+                  <svg class="social-list__icon_white social-list__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="footer-join">
-          <p class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</p>
-
-          <ul class="social-list social-list_margin-top list">
-            <li class="social-list__item">
-              <a href="" class="social-list__link_grey social-list__link link">
-                <svg class="social-list__icon_white social-list__icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link_grey social-list__link link">
-                <svg class="social-list__icon_white social-list__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link_grey social-list__link link">
-                <svg class="social-list__icon_white social-list__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link_grey social-list__link link">
-                <svg class="social-list__icon_white social-list__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
         <div class="footer-sign">
           <p class="footer__title">Подпишитесь на рассылку</p>
@@ -595,8 +700,9 @@
           </div>
         </div>
       </div>
-    </footer> 
-    <!-- Модалка --> <!--
+    </footer>
+    <!-- Модалка -->
+    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
@@ -677,7 +783,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script> 
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

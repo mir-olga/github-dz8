@@ -45,6 +45,7 @@
   transition-property: fill;
   @extend %transition-description;
 }
+
 .modal-text-input {
   width: 100%;
   height: 120px;
@@ -78,20 +79,28 @@
 
 .check-text {
   display: flex;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   position: relative;
   align-items: center;
-  padding: 9px;
 
-  @include font(14px, normal, 24px, 0.03em);
+  @include font(12px, normal, 14px, 0.03em);
   color: var(--secondary-title-color);
 
   transition-property: color;
   @extend %transition-description;
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, normal, 24px, 0.03em);
+    padding: 9px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
 }
+
 .check-span {
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 13px;
   border: 2px solid var(--primary-title-color);
   border-radius: 2px;
   margin-right: 8px;
@@ -104,6 +113,10 @@
   &:hover {
     border: 2px solid var(--accent-color);
     cursor: pointer;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 15px;
   }
 }
 .modal-checkbox {

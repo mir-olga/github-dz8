@@ -1,12 +1,22 @@
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
   position: relative;
   transform: scale(1) rotate(0);
   transition: transform 250ms ease;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    border-radius: 10px;
+  }
 }
 
 .close-btn {
@@ -23,6 +33,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+
 .modal-close-icon {
   width: 18px;
   height: 18px;
@@ -42,6 +53,10 @@
   margin-bottom: 20px;
   text-align: center;
 
-  @include font(20px, bold, 23px, 0.03em);
+  @include font(20px, bold, 30px, 0.03em);
   color: var(--primary-title-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font(20px, bold, 23px, 0.03em);
+  }
 }
