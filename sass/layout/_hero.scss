@@ -81,6 +81,7 @@
     padding: 200px 0;
   }
 }
+
 .hero__title {
   width: 360px;
   margin: 0 auto 30px;
@@ -93,6 +94,9 @@
   @media screen and (min-width: 1200px) {
     width: 696px;
     @include font(44px, 900, 60px, 0.06em);
+  }
+  @media screen and (max-width: 470px){
+    width: 100%;
   }
 }
 
