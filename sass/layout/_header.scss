@@ -4,6 +4,10 @@
 
 .header-container {
   @extend %align-items;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-navigation {
@@ -51,7 +55,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    align-items: center;
+    align-items: baseline;
   }
 }
 
@@ -85,5 +89,24 @@
   .header-contacts__data:hover &,
   .header-contacts__data:focus & {
     fill: var(--accent-color);
+  }
+}
+
+.header-icon__tel {
+  width: 10px;
+  height: 14px;
+
+  @media (min-width: 1200px) {
+    height: 16px;
+  }
+}
+
+.header-icon__mail {
+  width: 14px;
+  height: 10px;
+
+  @media (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
   }
 }

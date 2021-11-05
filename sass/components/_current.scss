@@ -9,6 +9,10 @@
     border-radius: 2px;
     background-color: var(--accent-color);
     display: block;
-    bottom: -33px;
+    bottom: -29px;
+
+    @media (min-width: 1200px) {
+      bottom: -30px;
+    }
   }
 }

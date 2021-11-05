@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 480px) {
-    margin:-15px;
+    margin: -15px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -13,13 +13,17 @@
 
 .client-list__item {
   margin: 15px;
-}
 
+  @media (min-width: 200px) and (max-width: 479px) {
+    margin: 15px auto;
+  }
+}
 /*@media screen and (min-width: 1200px) {
   .client-list__item + .client-list__item {
   margin-left: 30px;
   }
 }*/
+
 .client-list__link {
   color: var(--primary-icon-color);
   width: 210px;
