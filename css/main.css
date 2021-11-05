@@ -889,6 +889,12 @@ img {
   transform: translate(0);
 }
 
+@media (max-width: 360px) {
+  .portfolio-item:hover .portfolio-top-text {
+    padding: 12px 15px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-top-text {
     padding: 49px 24px;
